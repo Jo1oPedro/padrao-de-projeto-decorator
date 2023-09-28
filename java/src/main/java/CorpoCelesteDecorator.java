@@ -16,6 +16,6 @@ public abstract class CorpoCelesteDecorator implements ICorpoCeleste {
     public abstract String getNomeEstrutura();
     @Override
     public String getEstrutura() {
-        return this.corpoCeleste.getEstrutura() + "/" + this.getNomeEstrutura();
+        return this.getNomeEstrutura() + "/" + this.corpoCeleste.getEstrutura();
     }
 }

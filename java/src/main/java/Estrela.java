@@ -1,15 +1,15 @@
 public class Estrela extends CorpoCelesteDecorator{
-    public Estrela(ICorpoCeleste $corpoCeles) {
-        super($corpoCeles);
+    public Estrela(ICorpoCeleste $corpoCeleste) {
+        super($corpoCeleste);
     }
 
     @Override
     public float getPeso() {
-        return 0;
+        return 10000;
     }
 
     @Override
     public String getNomeEstrutura() {
-        return null;
+        return "Estrela";
     }
 }
